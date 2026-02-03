@@ -1,0 +1,1 @@
+1. Null pointer exception : có 1 biến nào đó chưa được cấp phát. <-- Lỗi kinh điển
