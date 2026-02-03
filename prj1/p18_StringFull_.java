@@ -124,6 +124,7 @@ public class p18_StringFull_ {
     //----- String.format
     System.out.println("------------------------");
 
+    
         String sf = String.format("%08d", 1234); System.out.println(sf);
         System.out.printf("%08d \n",4321);
         
@@ -131,8 +132,27 @@ public class p18_StringFull_ {
         // 00001234
         // 00001234 
 
+        
     //----- Lưu ý
+    System.out.println("------------------------");
+
         // So sánh 2 xâu dùng equal
+
+
+    //----- Các hàm repalce
+    System.out.println("------------------------");
+
+
+        // Thay thế tất cả các ký tự khớp tìm thấy.
+        String result0 = "Java is easy".replace('a', 'o'); // Kết quả: "Jovo is eosy"
+
+        // Thay thế lần xuất hiện đầu tiên
+        String result1 =       "banana".replaceFirst("a", "o"); // Kết quả: "bonana"
+
+        // Mạnh mẽ, vì nó cho phép bạn thay thế dựa trên regex thay vì chỉ một ký tự cố định.
+        String result = "Pass123".replaceAll("[0-9]", "*"); // Kết quả: "Pass***"
+
+
     }
     
 }
