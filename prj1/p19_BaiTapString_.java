@@ -188,5 +188,15 @@ public class p19_BaiTapString_ {
     System.out.println("---------------------");
 
         System.out.println(ghepXauTaoRaChuoiLonNhat("bca bc"));
+
+    //----- Tổng hợp mẹo regex
+    System.out.println("---------------------");
+
+        String[] as1 = "Bui T1u2 Anh".split("\\s+"); // ["Bui", "T1u2", "Anh"]
+        String[] as2 = "Bui T1u2 Anh".split("\\D+"); // ["", "1", "2"]
+        String[] as3 = "Bui T1u2 Anh".split("\\d+"); // ["Bui T", "u", " Anh"]
     }
+
+    
+
 }
